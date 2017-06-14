@@ -11,12 +11,27 @@ app.use(bodyParser.json());
 let books = []
 
 //serve static file
-app.get('/', function(req, res) {
-	var file = path.join(__dirname, '/index.html');
-	res.sendFile(file, function() {
-		console.log('file sent: index.html');
-	})
-})
+// app.get('/', function(req, res) {
+// 	var file = path.join(__dirname, '/index.html');
+// 	res.sendFile(file, function() {
+// 		console.log('file sent: index.html');
+// 	})
+// })
+
+app.get('/:filename?', function(req, res) {
+  console.log("file:", req.params.filename);
+  var file = "/index.html";
+  var fileName = path.join(__dirname, file);
+  res.sendFile(fileName, function (err) {
+    if (err) {
+      console.log('File Error:', err);
+      res.status(err.status).end();
+    }
+    else {
+      console.log('Sent:', fileName);
+    }
+  });
+});
 
 app.get('/book', function(req, res) {
 
