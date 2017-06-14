@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 let books = []
 
-serve static file
+//serve static file
 app.get('/', function(req, res) {
 	var file = path.join(__dirname, '/index.html');
 	res.sendFile(file, function() {

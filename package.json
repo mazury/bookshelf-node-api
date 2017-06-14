@@ -2,10 +2,10 @@
   "name": "task",
   "version": "1.0.0",
   "description": "task",
-  "main": "Task.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Task.js"
+    // "start": "node Task.js"
   },
   "author": "Adam Mazurkiewicz",
   "license": "ISC",
