@@ -5,10 +5,12 @@
   "main": "Task.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Task.js"
   },
   "author": "Adam Mazurkiewicz",
   "license": "ISC",
+  "engines": {
+    "node": "6.10.3"
+  },
   "dependencies": {
     "body-parser": "^1.17.2",
     "chai": "^4.0.2",
