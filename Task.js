@@ -3,6 +3,8 @@ const app = express()
 const bodyParser = require('body-parser');
 const path = require('path');
 
+const port = process.env.PORT || 8080
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -104,7 +106,6 @@ app.post('/book', function(req, res) {
 
 })
 
-const port = process.env.PORT || 8080
 app.listen(port, function() {
 	console.log('listening on port 8080');
 });
