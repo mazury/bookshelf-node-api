@@ -1,20 +1,19 @@
 {
-  "name": "task",
+  "name": "bookshelf-node-api",
   "version": "1.0.0",
-  "description": "task",
+  "description": "node REST api",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "Adam Mazurkiewicz",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.2",
-    "chai": "^4.0.2",
-    "chai-http": "^3.0.0",
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "mongoose": "^5.3.3",
+    "morgan": "^1.9.1",
+    "winston": "^3.1.0"
   },
-  "engines": {
-    "node": "6.10.3"
-  }
 }
